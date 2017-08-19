@@ -1,5 +1,8 @@
 {
   "editor.formatOnPaste": true,
   "editor.minimap.enabled": true,
-  "editor.snippetSuggestions": "top"
+  "editor.snippetSuggestions": "top",
+  "search.exclude": {
+    "**/node_modules": true
+  }
 }

@@ -16,6 +16,7 @@ import { createPath } from 'history/PathUtils';
 import { addLocaleData } from 'react-intl';
 // This is so bad: requiring all locale if they are not needed?
 /* @intl-code-template import ${lang} from 'react-intl/locale-data/${lang}'; */
+import ja from 'react-intl/locale-data/ja';
 import en from 'react-intl/locale-data/en';
 import cs from 'react-intl/locale-data/cs';
 /* @intl-code-template-end */
@@ -31,6 +32,7 @@ import { getIntl } from './actions/intl';
 const apolloClient = createApolloClient();
 
 /* @intl-code-template addLocaleData(${lang}); */
+addLocaleData(ja);
 addLocaleData(en);
 addLocaleData(cs);
 /* @intl-code-template-end */
